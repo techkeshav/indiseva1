@@ -12,20 +12,31 @@
     header p { font-size: 1.2rem; }
     section { padding: 40px 20px; max-width: 1100px; margin: auto; }
     h2 { color: #144E5A; border-bottom: 3px solid #f0c040; display: inline-block; margin-bottom: 20px; }
+    
+    /* Layout */
     .three-col { display: flex; flex-wrap: wrap; gap: 20px; }
-    .box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex: 1 1 calc(33% - 20px); }
+    .box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); flex: 1 1 calc(33% - 20px); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .box:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    
+    /* Lists */
     ul { list-style-type: square; padding-left: 20px; }
+    
+    /* Table */
     table { width: 100%; border-collapse: collapse; margin-top: 15px; }
     table, th, td { border: 1px solid #ccc; }
-    th, td { padding: 10px; text-align: left; }
+    th, td { padding: 10px; text-align: left; transition: background-color 0.3s ease; }
     th { background: #f0c040; color: #144E5A; }
-    .highlight { background: #f0c040; padding: 15px; border-radius: 5px; color: #144E5A; font-weight: bold; }
+    tr:hover td { background: #fef7e0; }
+    
+    /* Buttons/Links */
+    a.button { background: #f0c040; color: #144E5A; padding: 10px 18px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease, transform 0.2s ease; }
+    a.button:hover { background: #e0b030; transform: scale(1.05); }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="ChatGPT Image Aug 10, 2025, 02_39_50 PM.png" alt="Indi सेवा Logo" />
+  <img src="LOGO_URL_HERE" alt="Indi सेवा Logo" />
   <h1>Indi सेवा</h1>
   <p>Connecting Skilled Workers to Every Household — Fast, Fair, and Reliable</p>
 </header>
